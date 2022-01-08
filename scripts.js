@@ -72,8 +72,22 @@ let tie = "It is a tie";
 
 function game() 
 {
-        
-    
+    for(i = 0; i < 5; i++)
+    {
+        console.log(playRound());
+    }    
+    if(playerScore == computerScore)
+    {
+        alert("It is a tie");
+    }
+    else if(playerScore > computerScore) 
+    {
+        alert("Player win!");
+    }
+    else
+    {
+        alert("Computer Win!");
+    }
 }
 
 game();
